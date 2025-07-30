@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A demo HTML5 webpage with media, lists, tables, and validated form">
+  <meta name="keywords" content="HTML, form, validation, semantic, media">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Semantic Form Demo</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to WebForm Showcase</h1>
+    <p>Explore semantic HTML elements, multimedia, and smart form validation.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>💡 Why Use Semantic HTML?</h2>
+      <ul>
+        <li>Improves Accessibility for screen readers</li>
+        <li>Makes code more readable and maintainable</li>
+        <li>Boosts SEO performance</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 Feature Comparison Table</h2>
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>HTML4</th>
+            <th>HTML5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Semantics</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Audio/Video Support</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Form Validation</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>🎨 Media Gallery</h2>
+      <ul>
+        <li><img src="./MEDIA/profile_img_1.png" alt="Responsive Web Design Example" width="100"></li>
+        <li><img src="./MEDIA/profile_img_2.png" alt="HTML5 Form Layout Preview" width="100"></li>
+        <li><img src="./MEDIA/profile_img_3.png" alt="Developer writing semantic HTML" width="100"></li>
+      </ul>
+
+      <figure>
+        <figcaption>Sample Audio (HTML5 Audio Tag)</figcaption>
+        <audio controls>
+          <source src="./MEDIA/Recording (2).m4a" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </figure>
+
+      <figure>
+        <figcaption>Sample Video (HTML5 Video Tag)</figcaption>
+        <video width="320" height="240" controls>
+          <source src="./MEDIA/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </figure>
+    </section>
+
+    <section>
+      <h2>📋 Contact & Signup Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Doe" required pattern="^[A-Za-z\s]+$" title="Only letters and spaces allowed"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required><br><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678" pattern="^\d{11}$" required title="Enter 11-digit Nigerian number"><br><br>
+
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username" required minlength="3" maxlength="15"
+                 pattern="^[a-zA-Z0-9_-]{3,15}$"
+                 title="3–15 characters: letters, numbers, hyphen or underscore"><br><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password"
+                 placeholder="Use strong password" required
+                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                 title="At least 6 characters with uppercase, lowercase and a number"><br><br>
+
+          <label for="refcode">Referral Code:</label><br>
+          <input type="text" id="refcode" name="refcode" value="AUTO1234" readonly><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>
+            <input type="checkbox" name="newsletter" checked> Subscribe to newsletter
+          </label><br>
+          <label>
+            <input type="radio" name="plan" value="free" required> Free Plan
+          </label><br>
+          <label>
+            <input type="radio" name="plan" value="premium"> Premium Plan
+          </label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebForm Showcase. Built with 💙 using HTML5 only.</p>
+  </footer>
+
+</body>
+</html>
